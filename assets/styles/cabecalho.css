@@ -1,0 +1,26 @@
+.cabecalho,
+.navbar {
+  display: flex;
+}
+
+.cabecalho {
+  padding: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 139px;
+}
+
+.navbar {
+  gap: 3rem;
+}
+
+.forma {
+  position: absolute;
+  z-index: -1;
+}
+
+.perfil__img {
+  --lado: 40px;
+  width: var(--lado);
+  height: var(--lado);
+}

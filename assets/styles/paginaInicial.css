@@ -1,0 +1,35 @@
+.boas-vindas {
+  padding: 0 3.5rem;
+  gap: 1.5rem;
+}
+
+.boas-vindas,
+.boas-vindas__botoes,
+.boas-vindas__textos {
+  flex-direction: column;
+}
+
+.boas-vindas__textos,
+.boas-vindas__botoes {
+  display: flex;
+  gap: 1rem;
+}
+
+.imagens {
+  margin-top: 0;
+}
+
+.ilustracao-1 {
+  display: block;
+}
+
+.forma-2 {
+  right: 0;
+  left: unset;
+  top: 200px;
+  transform: scale(1);
+}
+
+.rodape {
+  margin-top: -25px;
+}

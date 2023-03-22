@@ -1,0 +1,6 @@
+.rodape {
+  position: relative;
+  color: var(--branco);
+  height: 104px;
+  background-color: var(--verde);
+}
