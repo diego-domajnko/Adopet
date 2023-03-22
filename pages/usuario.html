@@ -37,8 +37,14 @@
 
   <main class="principal">
     <section class="enviar-mensagem centralizar">
-      <p class="paragrafo">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:</p>
+      <p class="paragrafo">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
       <form action="#" class="form-msg">
+        <label for="foto-perfil" class="h4">
+          Nome
+          <img src="../assets/img/Usuário.png" alt="Foto do perfil" class="seletor-img">
+          <input type="file" id="foto-perfil" class="hidden">
+        </label>
+        <span class="legenda">Clique na foto para editar</span>
         <label for="nome" class="h4">
           Nome
           <input type="text" id="nome" class="pequeno" placeholder="Insira seu nome completo" aria-label="Insira seu nome completo">
@@ -47,15 +53,15 @@
           Telefone
           <input type="tel" id="telefone" class="pequeno" placeholder="Insira seu telefone e/ou whatsapp" aria-label="Insira seu telefone e/ou whatsapp">
         </label>
-        <label for="nome-animal" class="h4">
-          Nome do animal
-          <input type="text" id="nome-animal" class="pequeno" placeholder="Por qual animal você se interessou?" aria-label="Por qual animal você se interessou?">
+        <label for="cidade" class="h4">
+          Cidade
+          <input type="text" id="cidade" class="pequeno" placeholder="Qual a sua cidade?" aria-label="Qual a sua cidade?">
         </label>
-        <label for="mensagem" class="h4">
-          Mensagem
-          <textarea id="mensagem" class="pequeno" placeholder="Escreva sua mensagem." aria-label="Escreva sua mensagem."></textarea>
+        <label for="sobre" class="h4">
+          Sobre
+          <textarea id="sobre" class="pequeno" placeholder="Escreva sobre você." aria-label="Escreva sobre você."></textarea>
         </label>
-        <button type="submit" class="btn">Enviar</button>
+        <button type="submit" class="btn">Salvar</button>
       </form>
     </section>
     

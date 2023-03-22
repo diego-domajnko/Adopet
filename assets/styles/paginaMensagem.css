@@ -31,7 +31,7 @@
   border-radius: 6px;
   height: 48px;
   padding: 0.75rem 1rem;
-  color: #BCBCBC;
+  color: var(--cinza);
   font-weight: 400;
 }
 
@@ -52,7 +52,30 @@
   align-self: center;
 }
 
+.seletor-img {
+  border-radius: 50%;
+  width: 80px;
+  align-self: center;
+}
+
+.form-msg span {
+  color: var(--vermelho);
+  text-align: center;
+}
+
 @media (min-width: 768px) {
+  .enviar-mensagem {
+    min-width: 524px;
+  }
+
+  .enviar-mensagem .paragrafo {
+    width: unset;
+  }
+
+  .form-msg {
+    min-width: 524px;
+  }
+
   .forma-2 {
     display: block;
   }

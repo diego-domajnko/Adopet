@@ -130,7 +130,6 @@ body {
   .principal {
     max-width: 488px;
     width: 60%;
-    min-height: 100vh;
     margin: 10rem auto 0;
   }
 
