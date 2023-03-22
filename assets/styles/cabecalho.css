@@ -1,11 +1,11 @@
 .cabecalho,
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .cabecalho {
   padding: 3rem;
-  align-items: center;
   justify-content: space-between;
   height: 139px;
 }
@@ -23,4 +23,17 @@
   --lado: 40px;
   width: var(--lado);
   height: var(--lado);
+}
+
+@media (min-width: 768px) {
+  .navbar__logo {
+    display: inline-block;
+    width: 128px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cabecalho {
+    padding: 3rem 10rem;
+  }
 }

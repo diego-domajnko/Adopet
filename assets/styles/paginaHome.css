@@ -42,3 +42,44 @@
   margin-top: 0.5rem;
   gap: 0.5rem;
 }
+
+@media (min-width: 768px) {
+  .principal {
+    width: 100%;
+    max-width: unset;
+    padding: 0 2rem 2rem;
+    min-height: unset;
+  }
+
+  .pets {
+    --reps: 2;
+    --width: 1fr;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--reps), var(--width));
+  }
+
+  .pets .paragrafo {
+    --max-column: 3;
+    grid-column: 1/var(--max-column);
+  }
+}
+
+@media (min-width: 1440px) {
+  .principal {
+    padding-bottom: 4rem;
+  }
+
+  .pets {
+    --reps: 3;
+    --width: 368px;
+  }
+
+  .pets .paragrafo {
+    --max-column: 4;
+  }
+
+  .forma-2 {
+    display: block;
+  }
+}

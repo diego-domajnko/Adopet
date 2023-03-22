@@ -1,5 +1,9 @@
+.principal {
+  width: 70%;
+  max-width: 344px;
+}
+
 .boas-vindas {
-  padding: 0 3.5rem;
   gap: 1.5rem;
 }
 
@@ -13,6 +17,11 @@
 .boas-vindas__botoes {
   display: flex;
   gap: 1rem;
+  width: 100%;
+}
+
+.boas-vindas__botoes .btn {
+  width: 100%;
 }
 
 .imagens {
@@ -21,6 +30,7 @@
 
 .ilustracao-1 {
   display: block;
+  margin-left: -3rem;
 }
 
 .forma-2 {
@@ -32,4 +42,11 @@
 
 .rodape {
   margin-top: -25px;
+}
+
+@media (min-width: 768px) {
+  .boas-vindas__botoes .btn {
+    max-width: 362px;
+    margin: auto;
+  }
 }

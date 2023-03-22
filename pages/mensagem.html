@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/styles/style.css">
   <link rel="stylesheet" href="../assets/styles/cabecalho.css">
   <link rel="stylesheet" href="../assets/styles/rodape.css">
-  <link rel="stylesheet" href="../assets/styles/paginaLogin.css">
+  <link rel="stylesheet" href="../assets/styles/paginaMensagem.css">
 </head>
 <body>
   <header class="cabecalho centralizar">
@@ -28,46 +28,38 @@
         <img src="../assets/img/Mensagens.png" alt="Ir para a página de mensagens" class="navbar__link__img-message">
       </a>
     </nav>
-    <div class="perfil hidden">
+    <div class="perfil">
       <img src="../assets/img/Usuário.png" alt="Usuário" class="perfil__img">
     </div>
   </header>
 
   <main class="principal">
-    <div class="centralizar">
-      <img src="../assets/img/Logo-azul.png" alt="Adopet" class="logo">
-    </div>
-
-    <section class="formulario centralizar">
-      <div class="formulario__textos centralizar">
-        <p class="paragrafo">Ainda não tem cadastro?</p>
-        <p class="paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
-      </div>
-
-      <form action="#" class="form">
-        <label class="paragrafo" for="email">
-          Email
-          <input type="email" id="email" class="legenda" placeholder="Escolha seu melhor email" aria-label="Escolha seu melhor email">
-        </label>
-        <label class="paragrafo" for="nome">
+    <section class="enviar-mensagem centralizar">
+      <p class="paragrafo">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:</p>
+      <form action="#" class="form-msg">
+        <label for="nome" class="h4">
           Nome
-          <input type="text" id="nome" class="legenda" placeholder="Digite seu nome completo" aria-label="Digite seu nome completo">
+          <input type="text" id="nome" class="pequeno" placeholder="Insira seu nome completo" aria-label="Insira seu nome completo">
         </label>
-        <label class="paragrafo" for="senha">
-          Senha
-          <input type="password" id="senha" class="legenda" placeholder="Crie uma senha" aria-label="Crie uma senha">
+        <label for="telefone" class="h4">
+          Telefone
+          <input type="tel" id="telefone" class="pequeno" placeholder="Insira seu telefone e/ou whatsapp" aria-label="Insira seu telefone e/ou whatsapp">
         </label>
-        <label class="paragrafo" for="confirmar-senha">
-          Confirmar sua senha
-          <input type="password" id="confirmar-senha" class="legenda" placeholder="Repita a senha criada acima" aria-label="Repita a senha criada acima">
+        <label for="nome-animal" class="h4">
+          Nome do animal
+          <input type="text" id="nome-animal" class="pequeno" placeholder="Por qual animal você se interessou?" aria-label="Por qual animal você se interessou?">
         </label>
-        <button type="submit" class="btn">Cadastrar</button>
+        <label for="mensagem" class="h4">
+          Mensagem
+          <textarea id="mensagem" class="pequeno" placeholder="Escreva sua mensagem." aria-label="Escreva sua mensagem."></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
       </form>
     </section>
     
     <div class="imagens">
       <img src="../assets/img/forma-1.png" alt="Forma geometrica" class="forma forma-1">
-      <img src="../assets/img/forma-2.png" alt="Forma geometrica" class="forma forma-2">
+      <img src="../assets/img/forma-2.png" alt="Forma geometrica" class="forma forma-2 hidden">
       <img src="../assets/img/ilustracao-1.png" alt="Ilustração de um gato e cachorro juntos e corações" class="ilustracao-1 hidden">
       <img src="../assets/img/ilustracao-2.png" alt="Ilustração de três patas de gatos e cachorros" class="ilustracao-2 hidden">
     </div>

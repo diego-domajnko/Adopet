@@ -1,0 +1,59 @@
+.enviar-mensagem,
+.form-msg,
+.form-msg label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.enviar-mensagem .paragrafo {
+  width: 226px;
+}
+
+.form-msg {
+  padding: 2rem 1rem;
+  width: 90%;
+  margin: 0.5rem auto 1rem;
+  text-align: left;
+  background-color: var(--cinza-claro);
+  border-radius: 10px;
+  max-width: 440px;
+}
+
+.form-msg label {
+  gap: 0.5rem;
+  color: var(--azul);
+}
+
+.form-msg input,
+.form-msg textarea {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  height: 48px;
+  padding: 0.75rem 1rem;
+  color: #BCBCBC;
+  font-weight: 400;
+}
+
+.form-msg input::placeholder,
+.form-msg textarea::placeholder {
+  color: #BCBCBC;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.form-msg textarea {
+  height: 96px;
+}
+
+.form-msg .btn {
+  margin-top: 1.5rem;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .forma-2 {
+    display: block;
+  }
+}
