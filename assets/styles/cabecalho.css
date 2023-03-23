@@ -23,6 +23,7 @@
   --lado: 40px;
   width: var(--lado);
   height: var(--lado);
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {

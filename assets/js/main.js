@@ -1,14 +1,13 @@
-import { validarFormulario } from "./validarForm.js";
-
-const form = document.querySelector('.form');
+/* const form = document.querySelector('.form');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
 
-  if (validarFormulario()) {
-    console.log('envio ok');
-  } else {
-    console.log('não enviou formulario')
-  }
-
+  console.log(respostas);
 })
+ */
+
+const fotoDoPerfil = document.querySelector('.perfil__img');
+const urlFotoDoPerfil = localStorage.getItem('userImg') || "../assets/img/Usuário.png";
+
+fotoDoPerfil.src = urlFotoDoPerfil;
