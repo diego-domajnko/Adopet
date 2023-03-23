@@ -36,11 +36,8 @@
   margin-bottom: 1.5rem;
 }
 
-.contato {
-  margin-top: 0.5rem;
-}
-
 .link-contato {
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;

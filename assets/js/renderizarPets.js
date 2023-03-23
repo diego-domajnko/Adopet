@@ -22,12 +22,10 @@ function renderizar(pet) {
       <li>${pet.caracteristicas}</li>
     </ul>
     <span class="legenda">${pet.cidade} (${pet.estado})</span>
-    <div class="contato">
-      <a href="../pages/mensagem.html" class="link-contato">
-        <img src="../assets/img/ícone_mensagem.png" alt="Falar com o responsável">
-        <span class="legenda">Falar com responsável</span>
+    <a href="../pages/mensagem.html" class="link-contato">
+      <img src="../assets/img/ícone_mensagem.png" alt="Falar com o responsável">
+      <span class="legenda">Falar com responsável</span>
       </a>
-    </div>
   </div>
 </div>
   `;
