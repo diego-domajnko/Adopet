@@ -7,9 +7,11 @@ const nome = document.getElementById('nome');
 const telefone = document.getElementById('telefone');
 const cidade = document.getElementById('cidade');
 const sobre = document.getElementById('sobre');
-const user = JSON.parse(localStorage.getItem('user')) || [];
+const usuarios = JSON.parse(localStorage.getItem('user')) || [];
+const usuarioLogado = JSON.parse(localStorage.getItem('userAutenticado'));
+const dadosUsuarioLogado = usuarios.find(user => user.email == usuarioLogado);
 
-if (!Array.isArray(user)) {
+if (!Array.isArray(dadosUsuarioLogado)) {
   lerUser();
 }
 
@@ -30,11 +32,11 @@ inputFotoPerfil.addEventListener('change', () => {
 });
 
 function lerUser() {
-  nome.value = user.nome;
-  telefone.value = user.telefone;
-  cidade.value = user.cidade;
-  sobre.value = user.sobre;
-  imgPerfil.src = localStorage.getItem('userImg') || "../assets/img/Usuário.png";
+  nome.value = dadosUsuarioLogado.nome;
+  telefone.value = dadosUsuarioLogado.telefone;
+  cidade.value = dadosUsuarioLogado.cidade;
+  sobre.value = dadosUsuarioLogado.sobre;
+  imgPerfil.src = localStorage.getItem(`userImg${usuarioLogado}`) || "../assets/img/Usuário.png";
 }
 
 function habilitarEdicao() {
@@ -57,15 +59,20 @@ function lerImgPrevia(input) {
 
 function salvarFormulario() {
   const fotoDoPerfil = document.querySelector('.perfil__img');
-  const usuario = {
-    nome: nome.value,
+  const usuarioEditado = {
+    email: dadosUsuarioLogado.email,
+    nome: dadosUsuarioLogado.nome,
+    senha: dadosUsuarioLogado.senha,
     telefone: telefone.value,
     cidade: cidade.value,
     sobre: sobre.value
   }
+
+  usuarios.splice(usuarios.indexOf(dadosUsuarioLogado), 1);
+  usuarios.push(usuarioEditado);
   
-  localStorage.setItem('userImg', imgPerfil.src);
-  localStorage.setItem('user', JSON.stringify(usuario));
+  localStorage.setItem(`userImg${usuarioLogado}`, imgPerfil.src);
+  localStorage.setItem('user', JSON.stringify(usuarios));
 
   fotoDoPerfil.src = imgPerfil.src;
 

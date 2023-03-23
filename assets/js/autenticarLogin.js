@@ -1,10 +1,6 @@
-async function buscarUsuarios() {
-  const res = await fetch('http://localhost:3000/usuarios');
-  const conv = await res.json();
-  return conv;
-}
+const usuarios = JSON.parse(localStorage.getItem('user')) || [];
 
-const usuarios = await buscarUsuarios();
+console.log(usuarios);
 
 const form = document.querySelector('.form');
 
@@ -12,14 +8,23 @@ form.addEventListener('submit', e => {
   e.preventDefault();
 
   const email = document.getElementById('email');
+  const senha = document.getElementById('senha');
+  const msgErro = document.getElementById('mensagem-erro-login');
   const usuario = usuarios.find(usuario => usuario.email == email.value);
 
   if (usuario) {
-    const senha = document.getElementById('senha');
     if (usuario.senha == senha.value) {
+      msgErro.classList.add('hidden');
+      localStorage.setItem('userAutenticado', JSON.stringify(email.value));
       location.href = "../pages/home.html";
+    } else {
+      msgErro.classList.remove('hidden');
     }
   } else {
-    form.innerHTML += `<span class="paragrafo" style="color:red">Usuário ou senha incorretos</span>`;
+    msgErro.classList.remove('hidden');
   }
+
+
+  email.value = "";
+  senha.value = "";
 })

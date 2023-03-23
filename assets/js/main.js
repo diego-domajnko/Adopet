@@ -1,13 +1,5 @@
-/* const form = document.querySelector('.form');
-
-form.addEventListener('submit', e => {
-  e.preventDefault();
-
-  console.log(respostas);
-})
- */
-
+const usuarioLogado = JSON.parse(localStorage.getItem('userAutenticado'));
 const fotoDoPerfil = document.querySelector('.perfil__img');
-const urlFotoDoPerfil = localStorage.getItem('userImg') || "../assets/img/Usuário.png";
+const urlFotoDoPerfil = localStorage.getItem(`userImg${usuarioLogado}`) || "../assets/img/Usuário.png";
 
 fotoDoPerfil.src = urlFotoDoPerfil;
