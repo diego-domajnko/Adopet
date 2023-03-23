@@ -37,10 +37,13 @@
 }
 
 .contato {
-  display: flex;
-  align-items: center;
   margin-top: 0.5rem;
   gap: 0.5rem;
+}
+
+.link-contato {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
