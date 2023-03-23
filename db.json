@@ -1,17 +1,15 @@
 {
   "usuarios": [
-    {
-      "diegodomajnko@gmail.com":
       {
-        "senha": "",
-        "nome": "",
+        "email": "diegodomajnko@gmail.com",
+        "senha": "1234",
+        "nome": "Diego Alexander Domajnko",
         "telefone": "",
         "cidade": "",
         "sobre": "",
         "img": ""
       }
-    }
-  ],
+    ],
   "pets": [
     {
       "nome": "Dunga",
