@@ -1,5 +1,5 @@
 .principal {
-  width: 70%;
+  width: 90%;
   max-width: 344px;
 }
 
@@ -31,6 +31,8 @@
   width: 100%;
   gap: 0.25rem;
   color: var(--cinza);
+  display: flex;
+  flex-direction: column;
 }
 
 .form input {
@@ -40,6 +42,7 @@
   height: 40px;
   text-align: center;
   color: #BCBCBC;
+  align-self: center;
 }
 
 .form input::placeholder {
@@ -66,12 +69,29 @@
 }
 
 @media (min-width: 768px) {
+  .principal {
+    width: 70%;
+    max-width: 552px;
+  }
+
+  input {
+    width: 344px;
+  }
+
   .ilustracao-2 {
     height: 375px;
   }
 }
 
 @media (min-width: 1440px) {
+  input {
+    width: 100%;
+  }
+
+  input[type="password"] {
+    max-width: 352px;
+  }
+
   .ilustracao-2 {
     height: 408px;
   }

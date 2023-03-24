@@ -20,8 +20,8 @@
 <body>
   <header class="cabecalho centralizar">
     <nav class="navbar">
-      <a href="../index.html">
-        <img src="../assets/img/Logo.png" alt="Adopet" class="navbar__logo hidden">
+      <a href="../index.html" class="navbar__link navbar__logo hidden">
+        <img src="../assets/img/Logo.png" alt="Adopet" class="navbar__logo__img">
       </a>
       <a href="../pages/home.html" class="navbar__link">
         <img src="../assets/img/Casa.png" alt="Ir para a página inicial" class="navbar__link__img-home">
@@ -51,22 +51,22 @@
       <form action="#" class="form" method="post">
         <label class="paragrafo" for="email">
           Email
-          <input type="email" id="email" class="legenda" placeholder="Escolha seu melhor email" aria-label="Escolha seu melhor email" name="email">
+          <input type="email" id="email" class="legenda" placeholder="Escolha seu melhor email" aria-label="Escolha seu melhor email" name="email" required>
           <span class="mensagem-erro"></span>
         </label>
         <label class="paragrafo" for="nome">
           Nome
-          <input type="text" id="nome" class="legenda" placeholder="Digite seu nome completo" aria-label="Digite seu nome completo" name="nome">
+          <input type="text" id="nome" class="legenda" placeholder="Digite seu nome completo" aria-label="Digite seu nome completo" name="nome" required>
           <span class="mensagem-erro"></span>
         </label>
         <label class="paragrafo" for="senha">
           Senha
-          <input type="password" id="senha" class="legenda" placeholder="Crie uma senha" aria-label="Crie uma senha" name="senha">
+          <input type="password" id="senha" class="legenda" placeholder="Crie uma senha" aria-label="Crie uma senha" name="senha" required>
           <span class="mensagem-erro"></span>
         </label>
         <label class="paragrafo" for="confirmarSenha">
           Confirmar sua senha
-          <input type="password" id="confirmarSenha" class="legenda" placeholder="Repita a senha criada acima" aria-label="Repita a senha criada acima" name="confirmarSenha">
+          <input type="password" id="confirmarSenha" class="legenda" placeholder="Repita a senha criada acima" aria-label="Repita a senha criada acima" name="confirmarSenha" required>
           <span class="mensagem-erro"></span>
         </label>
         <button type="submit" class="btn">Cadastrar</button>

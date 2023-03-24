@@ -29,12 +29,23 @@
 @media (min-width: 768px) {
   .navbar__logo {
     display: inline-block;
+  }
+  
+  .navbar__logo__img {
     width: 128px;
+  }
+
+  .perfil__img {
+    --lado: 48px;
   }
 }
 
 @media (min-width: 1440px) {
   .cabecalho {
     padding: 3rem 10rem;
+  }
+
+  .perfil__img {
+    --lado: 56px;
   }
 }
